@@ -1,0 +1,12 @@
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search-input{
+        background-color: #474748;
+        border-radius: 15px;
+        width: 50%;
+        height: 30px;
+        
+    }
+}

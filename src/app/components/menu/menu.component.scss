@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 3rem;
+
+    img {
+        max-height: 5rem;
+    }
+
+    .menu-buttons-container {
+        margin-right: 43%;
+
+        .button {
+            width: 7rem;
+            height: 4rem;
+            background-color: #4f4f53;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            border: none;
+            margin-right: 4px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .button:hover{
+            background-color:  #7e7e7e;
+        }
+    }
+}
