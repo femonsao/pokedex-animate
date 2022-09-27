@@ -10,6 +10,9 @@
 
     .menu-buttons-container {
         margin-right: 43%;
+        height: 4rem;
+        display: flex;
+        justify-content: flex-start;
 
         .button {
             width: 7rem;
@@ -22,9 +25,17 @@
             margin-right: 4px;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
+
         }
-        .button:hover{
-            background-color:  #7e7e7e;
+
+        .button:hover {
+            background-color: #7e7e7e;
+        }
+
+        .button:hover,
+        .button:focus {
+            height: 4.5rem;
+
         }
     }
 }

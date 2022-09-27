@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3rem;
+    .left-side-container {
+        width: 500px;
+        height: 700px;
+        margin-right: 1px;
+        background-color: var(--base-color-poke);
+        border-radius: 10px;
+    }
+
+    .right-side-container {
+        width: 500px;
+        height: 600px;
+        background-color: var(--base-color-poke);
+        margin-top: 3rem;
+        border-radius: 10px;
+    }
+}
