@@ -8,6 +8,7 @@ import { SearchComponent } from './components/search/search.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PokedexBaseComponent } from './components/pokedex-base/pokedex-base.component';
+import { ImgPokemonComponent } from './components/img-pokemon/img-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PokedexBaseComponent } from './components/pokedex-base/pokedex-base.com
     SearchComponent,
     MenuComponent,
     PokedexBaseComponent,
+    ImgPokemonComponent,
 
   ],
   imports: [
