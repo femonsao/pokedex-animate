@@ -1,22 +1,82 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  .top-poke-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    margin-top: 3rem;
-    .left-side-container {
-        width: 500px;
-        height: 700px;
-        margin-right: 1px;
-        background-color: var(--base-color-poke);
-        border-radius: 10px;
+    .screen-container {
+      width: 500px;
+      height: 250px;
+      background-color: red;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+    }
+    .sound-container {
+      width: 100px;
+      height: 150px;
+      border-top-left-radius: 300%;
+      border-bottom-left-radius: 250%;
+      background-color: red;
+      align-self: center;
+
+    }
+  }
+  .middle-poke {
+    display: flex;
+    justify-content: space-between;
+    width: 414px;
+    height: 50px;
+    background-color: red;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin-left: 106px;
+    box-shadow: 10px 5px 5px black;
+
+    .hinge {
+      width: 30px;
+      border-left: 3px solid black;
+      border-radius: 50px;
+    }
+    .middle-square{
+        width: 10px;
+        height: 15px;
+        background-color: black;
+        align-self: center;
+    }
+  }
+  .botton-base {
+    display: flex;
+    flex-direction: row;
+    .butons-container {
+        width: 200px;
+        height: 250px;
+        background-color: red;
+        border-top-left-radius: 150%;
+        border-bottom-left-radius: 150%;
+        box-shadow: 10px 5px 5px black;
     }
 
-    .right-side-container {
+    .screen-container {
         width: 500px;
-        height: 600px;
-        background-color: var(--base-color-poke);
-        margin-top: 3rem;
-        border-radius: 10px;
+        height: 250px;
+        background-color: red;
+        border-bottom-right-radius: 20px;
+        box-shadow: 10px 5px 5px black;
     }
+
+    .right-container {
+        width: 100px;
+        height: 150px;
+        border-top-right-radius: 300%;
+        border-bottom-right-radius: 250%;
+        background-color: red;
+        align-self: center;
+        box-shadow: 10px 5px 5px black;
+    }
+  }
 }
