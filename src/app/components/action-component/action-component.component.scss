@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .left-container {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        height: 220px;
+        margin-left: 20px;
+        background-color: black;
+        z-index: 10;
+        border-bottom-left-radius: 150%;
+        border-top-left-radius: 150%;
+
+        .square {
+            background-color: greenyellow;
+            width: 15px;
+            height: 15px;
+            z-index: 15;
+        }
+        .buttons-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin-left: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            z-index: 30;
+            .top-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 30px;
+
+                button {
+                    transform: rotate(90deg);
+                    width: 40px;
+                    height: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+            .middle-buttons {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 100px;
+                height: 20px;
+                button {
+                    width: 40px;
+                    height: 20px;
+                }
+
+                .middle {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #efefef;
+                    box-shadow: 0 0 30px #efefef;
+                    border-radius: 5px;
+                }
+            }
+            .bottom-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 30px;
+                margin-top: 5px;
+                button {
+                    transform: rotate(90deg);
+                    width: 40px;
+                    height: 20px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+    .right-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 400px;
+        height: 180px;
+        background-color: black;
+        z-index: 10;
+        border-bottom-right-radius: 10px;
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            width: 35px;
+            height: 100%;
+            justify-content: flex-end;
+            div {
+                box-shadow: 0 0 5px #cfcdcd;
+            }
+            .button-yes:hover{
+                background-color: rgb(180, 255, 118);
+          
+            }
+            .button-no:hover{
+                background-color: rgb(255, 46, 46);
+            }
+            .button-yes {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                margin-bottom: 5px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                background-color: greenyellow;
+                color: black;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 13px;
+            }
+                        
+            .button-no {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                margin-bottom: 5px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                background-color: red;
+                color: black;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 13px;
+            }
+        }
+    }
+}

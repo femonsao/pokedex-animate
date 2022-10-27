@@ -8,20 +8,55 @@
     display: flex;
     flex-direction: row;
     .screen-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 500px;
       height: 250px;
       background-color: red;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+      .screen-background{
+        width: 450px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: black;
+
+      }
 
     }
     .sound-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100px;
       height: 150px;
       border-top-left-radius: 300%;
       border-bottom-left-radius: 250%;
       background-color: red;
       align-self: center;
+      .cicle-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90px;
+        height: 100px;
+        margin-left: 15px;
+        border-radius: 50%;
+        .middle-buttons{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 100px;
+
+        }
+        .sound{
+          width: 8px;
+          height: 8px;
+          background-color: black;
+          border-radius: 50%;
+        }
+      }
 
     }
   }
@@ -30,6 +65,8 @@
     justify-content: space-between;
     width: 414px;
     height: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     background-color: red;
     padding-left: 50px;
     padding-right: 50px;
@@ -53,6 +90,8 @@
     display: flex;
     flex-direction: row;
     .butons-container {
+        display: flex;
+        align-items: center;
         width: 200px;
         height: 250px;
         background-color: red;
@@ -62,7 +101,8 @@
     }
 
     .screen-container {
-        width: 500px;
+        z-index: 1;
+        width: 400px;
         height: 250px;
         background-color: red;
         border-bottom-right-radius: 20px;
